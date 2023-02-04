@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dk-grey-magenta: hsl(303, 10%, 53%);
+  --lt-grey-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --primary-font: "League Spartan", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  background: url(./images/bg-pattern-top-mobile.svg) left top no-repeat, url(./images/bg-pattern-bottom-mobile.svg) center bottom no-repeat;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3em 0 5em;
+}
+
+.social__title {
+  color: var(--very-dark-magenta);
+  font-size: 2rem;
+  text-align: center;
+  width: 65%;
+  margin: 3rem auto 0;
+  line-height: 1;
+}
+
+.social__text {
+  color: var(--dk-grey-magenta);
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.social__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--lt-grey-magenta);
+  margin-top: 1rem;
+  padding: 1em 0;
+  border-radius: 10px;
+}
+
+.social__rating-title {
+  color: var(--very-dark-magenta);
+}
+
+.social__proofcard {
+  background-color: var(--very-dark-magenta);
+  color: var(--white);
+  margin-top: 1.2rem;
+  border-radius: 10px;
+  padding: 3em;
+}
+
+.social__proof {
+  margin-top: 3rem;
+}
+
+.social__proofcard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66%;
+}
+
+.social__proofcard-image {
+  border-radius: 50%;
+  width: 28%;
+}
+
+.social__proofcard-name {
+  font-weight: 500;
+}
+
+.social__proofcard-title {
+  color: var(--soft-pink);
+}
+
+.social__proofcard-text {
+  margin-top: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .top-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} ;
